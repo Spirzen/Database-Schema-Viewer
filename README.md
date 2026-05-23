@@ -10,6 +10,10 @@
   Бесплатно, локально, без тяжёлых IDE.
 </p>
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="Database Schema Viewer — ER-диаграмма, панель подключения и карточка таблицы" width="900">
+</p>
+
 ---
 
 ## Содержание
@@ -181,7 +185,7 @@
 ### Вариант A — скрипт Windows
 
 ```powershell
-cd "K:\Database Schema Viewer"
+cd Database-Schema-Viewer
 .\start.ps1
 ```
 
@@ -253,7 +257,7 @@ Backend по-прежнему нужен для работы с БД.
 | **Oracle** | `localhost` | `1521` | Service / SID | owner (часто = пользователь) |
 | **SQLite** | — | — | путь к `.db` | — |
 
-\* Для **именованного экземпляра** (`SPIRZEN\SQLEXPRESS`) указывайте только хост **без порта** — поле порта скрывается.
+\* Для **именованного экземпляра** (`ПК\SQLEXPRESS`) указывайте только хост **без порта** — поле порта скрывается.
 
 ### Советы
 
