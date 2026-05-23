@@ -1,0 +1,130 @@
+# ─── Секреты и локальная конфигурация (никогда в репозиторий) ───
+.env
+.env.*
+!.env.example
+*.env.local
+secrets/
+credentials.json
+*.pem
+*.key
+*.pfx
+connection.json
+appsettings.*.json
+!appsettings.json
+
+# ─── Python / backend ───
+backend/.venv/
+backend/venv/
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.cover
+.hypothesis/
+
+# ─── Node.js / frontend ───
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+*.tsbuildinfo
+.vite/
+*.local
+
+# ─── Логи и временные файлы ───
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── Демо и локальные БД (генерируются скриптом) ───
+sample/demo.db
+sample/*.db
+sample/*.db-journal
+sample/*.db-wal
+sample/*.sqlite
+sample/*.sqlite3
+*.db-shm
+*.db-wal
+
+# Дампы и бэкапы БД (не исходники проекта)
+*_dump.sql
+*_backup.sql
+/backups/
+*.bak
+*.backup
+*.dump
+
+# ─── IDE и редакторы ───
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Cursor / AI (локальные артефакты)
+.cursor/
+*.plan.md
+
+# ─── ОС ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ─── Прочее ───
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+coverage/
+.nyc_output/
+*.pid
+*.seed
+*.pid.lock
+
+# Windows
+$RECYCLE.BIN/
+
+# Экспорты диаграмм из приложения
+exports/
+schema-*.png
